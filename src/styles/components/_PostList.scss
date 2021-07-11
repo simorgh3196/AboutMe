@@ -1,0 +1,77 @@
+$side-padding: 1.6rem;
+$side-padding-sm: 1rem;
+.post-list-empty {
+  padding: 5rem 0;
+  text-align: center;
+  font-weight: 700;
+  color: var(--color-base-text-lighter);
+  font-size: 1.4rem;
+}
+.post-link {
+  border-radius: 15px;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  background: var(--color-base-background-lighter);
+}
+.post-link__main-link {
+  padding: 1.4rem $side-padding 1.4rem;
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  @include mq(sm) {
+    padding: 1rem $side-padding-sm 1.2rem;
+  }
+}
+
+.post-link__title {
+  font-size: 1.1rem;
+  flex: 1;
+}
+
+.post-link__date {
+  margin-top: 0.4rem;
+  color: var(--color-base-text-lighter);
+  font-size: 12px;
+}
+
+.post-link__site {
+  margin-top: 0.9rem;
+  color: var(--color-base-text-lighter);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.post-link__site-favicon {
+  border-radius: 3px;
+  margin-right: 6px;
+}
+.post-link__site-hostname {
+  margin-left: 6px;
+}
+
+.post-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .post-link {
+    margin-top: 1.3rem;
+    width: 47.5%;
+    @include mq(sm) {
+      margin-top: 1.3rem;
+      width: 100%;
+    }
+  }
+}
+.post-list-load {
+  margin-top: 3rem;
+  text-align: center;
+}
+.post-list-load__button {
+  border: solid 1px var(--color-border);
+  padding: 0.9em 2em;
+  border-radius: 2.5em;
+  font-size: 0.9rem;
+  color: var(--color-base-text-lighter);
+  overflow-anchor: none;
+}
